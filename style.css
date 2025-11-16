@@ -41,7 +41,7 @@ a {
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -50,7 +50,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 6px;
   height: 6px;
   border-radius: 6px;
@@ -255,8 +255,8 @@ a {
 
 .noselect {
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .notouch {
@@ -272,8 +272,8 @@ a {
 .pointer {
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .ofhh {
@@ -320,6 +320,18 @@ a {
   .spv {
     flex-direction: column;
   }
+  /* Additional mobile fixes to prevent overflow and improve spacing */
+  .sp .fcc {
+    position: relative;
+    gap: 12px;
+  }
+  .sp .fcc img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin: 0 auto;
+  }
 }
 .shadow1 {
   box-shadow: rgba(0, 0, 0, 0.1568627451) 0px 3px 6px;
@@ -334,9 +346,101 @@ a {
 
 .cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hoverOrange:hover {
   color: #fda217;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
+
+/* --- Custom enhancements: headings, buttons, responsive tweaks --- */
+.section-title {
+  display: block;
+  text-align: left;
+  padding: 12px 18px;
+  border-left: 8px solid #fda217;
+  background: rgba(250, 242, 230, 0.6);
+  border-radius: 6px;
+  margin: 12px auto 22px auto;
+}
+.btn--accent {
+  background: #e63a4a;
+}
+
+/* small spacer to give each major section a little breathing room */
+.section-gap {
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn--pink {
+  background: #ff9fb1;
+}
+
+.btn--accent {
+  background: #e63a4a;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 768px) {
+  h2.f40 {
+    font-size: 28px;
+  }
+  .section-title {
+    padding: 10px 12px;
+    border-left-width: 6px;
+    font-size: 20px;
+  }
+  .btn {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+  img.w1920 {
+    width: 100%;
+    height: auto;
+  }
+  .pc .my120 {
+    margin: 12px;
+  }
+  .sp img.w1000.abs {
+    position: static;
+    width: 220px;
+    max-width: 60%;
+    margin: -40px auto 0 auto;
+    display: block;
+  }
+  .sp .f50 {
+    font-size: 20px;
+    padding: 6px 12px;
+    text-align: center;
+  }
+  .sp .my100 {
+    margin: 40px 0;
+  }
+  .sp .my50 {
+    margin: 24px 0;
+  }
+  /* Ensure large figures/cards scale down on small screens */
+  figure {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  figure img {
+    height: auto !important;
+  }
+  /* prevent body viewport issues on some phones */
+  html,
+  body {
+    height: auto;
+    max-height: none;
+  }
+}

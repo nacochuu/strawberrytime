@@ -478,8 +478,8 @@ function setHeader() {
         <div class="fcc mt9">
           <a href="./" class="px23 f20 fw700 nodeco">HOME</a>
           <a href="./menu.html" class="px23 f20 fw700 nodeco">メニュー</a>
-          <a href="./price.html" class="px23 f20 fw700 nodeco">パン教室</a>
-          <a href="./point.html" class="px23 f20 fw700 nodeco">アクセス</a>
+          <a href="./school.html" class="px23 f20 fw700 nodeco">パン教室</a>
+          <a href="./access.html" class="px23 f20 fw700 nodeco">アクセス</a>
           <a href="#" onclick="handleTelClick(event)" class="fcc w242 h57 br27 nodeco bg#DB1966 ml34">
             <img src="img/i-tel.webp" class="w50" alt="" />
             <div class="f21 fw700 ml9 cFFF">お問い合わせ</div></a
@@ -522,7 +522,7 @@ function setHeader() {
   [
     { href: "./", icon: "img/sp/menu-home.webp", iweight: "24", label: "HOME", arrow: false },
     { href: "./menu", icon: "img/sp/menu-service.webp", iweight: "23", label: "メニュー", arrow: true },
-    { href: "./works", icon: "img/sp/menu-works.webp", iweight: "26", label: "パン教室", arrow: false },
+    { href: "./school", icon: "img/sp/menu-works.webp", iweight: "26", label: "パン教室", arrow: false },
     { href: "./price", icon: "img/sp/menu-price.webp", iweight: "24", label: "イベント", arrow: false },
     { href: "./point", icon: "img/sp/menu-point.webp", iweight: "38", label: "アクセス", arrow: false },
     { href: "tel:09028663082", icon: "img/i-tel.webp", iweight: "26", label: "", arrow: false },
