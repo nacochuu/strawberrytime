@@ -528,14 +528,11 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function setFooter() {
-  const footerPcImg = document.body.dataset.footerImg || "img/footer.webp";
-  const footerSpImg = document.body.dataset.footerSpImg || "img/sp/footer.webp";
   const mapurl =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.1685800270866!2d131.43501605769313!3d34.16019916001695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354490bfdd5cd357%3A0xb3984796b1053fee!2z44GK44GG44Gh44OZ44O844Kr44Oq44O8IHN0cmF3YmVycnl0aW1l!5e0!3m2!1sja!2sjp!4v1752224075332!5m2!1sja!2sjp";
   const footer = qs(".footer");
   footer.outerHTML = /* HTML */ `
     <div class="pc footer fcc z100">
-      <img src="${footerPcImg}" class="w1920 h628 mt-90" alt="" />
       <div class="fxc abs bot155">
         <iframe class="w440 h360" src="${mapurl}" loading="lazy"></iframe>
         <div class="v f  ml115">
@@ -550,7 +547,6 @@ function setFooter() {
       </div>
     </div>
     <div class="sp footer fcc z100 bgF9E8ED">
-      <img src="${footerSpImg}" class="w430 mt-30" alt="" />
       <div class="v fxc abs bot62">
         <iframe class="w382 h227" src="${mapurl}" loading="lazy"></iframe>
         <img src="img/logo1.webp" class="w231 mt23" alt="logo" />
