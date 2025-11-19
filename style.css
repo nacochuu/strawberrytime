@@ -332,6 +332,11 @@ a {
     border-radius: 12px;
     margin: 0 auto;
   }
+
+  /* Allow opting-out of mobile rounded corners for specific images */
+  .sp img.no-radius {
+    border-radius: 0 !important;
+  }
 }
 .shadow1 {
   box-shadow: rgba(0, 0, 0, 0.1568627451) 0px 3px 6px;
@@ -358,13 +363,39 @@ a {
   display: block;
   text-align: left;
   padding: 12px 18px;
-  border-left: 8px solid #fda217;
-  background: rgba(250, 242, 230, 0.6);
+  border-left: 8px solid #cb3161;
+  background: #f9e8ed;
   border-radius: 6px;
   margin: 12px auto 22px auto;
 }
 .btn--accent {
   background: #e63a4a;
+}
+
+/* Utility background class for footer color */
+.bgF9E8ED {
+  background: #f9e8ed !important;
+}
+/* Ensure SP footer background is visible and contents positioned correctly */
+@media screen and (max-width: 768px) {
+  .sp.footer.bgF9E8ED {
+    position: relative;
+    background: #f9e8ed !important;
+    padding-top: 18px;
+    padding-bottom: 600px; /* give space for absolutely positioned inner box */
+    overflow: visible;
+  }
+  .sp.footer.bgF9E8ED img.w430 {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+  }
+  .sp.footer.bgF9E8ED .abs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 62px; /* match bot62 from JS */
+  }
 }
 
 /* small spacer to give each major section a little breathing room */
@@ -442,5 +473,17 @@ a {
   body {
     height: auto;
     max-height: none;
+  }
+  /* SP header navigation button style */
+  .sp.header a.nav-btn,
+  .sp .header a.nav-btn {
+    padding: 6px 10px !important;
+    border-radius: 16px !important;
+    background: rgba(219, 49, 97, 0.08) !important;
+    transition: background 0.2s;
+  }
+  .sp.header a.nav-btn:active,
+  .sp .header a.nav-btn:active {
+    background: rgba(219, 49, 97, 0.15) !important;
   }
 }
