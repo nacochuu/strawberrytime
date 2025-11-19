@@ -11,145 +11,150 @@
     <div class="header"></div>
 
     <div class="v fcc pc w100p">
-        <img src="img/pan1.webp" class="w100p" style="filter: brightness(1) opacity(0.7)" alt="おうちベーカリーstrawberrytime 焼きたてパンの店内" />
+      <img src="img/pan1.webp" class="w100p" style="filter: brightness(1) opacity(0.7)" alt="おうちベーカリーstrawberrytime 焼きたてパンの店内" />
 
-        <!-- 末尾のスペースを除去 -->
-        <img src="img/logo1.webp" class="w40p abs" style="filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6))" alt="おうちベーカリーstrawberrytime ロゴ" />
+      <!-- 末尾のスペースを除去 -->
+      <img
+        src="img/logo1.webp"
+        class="w40p abs"
+        style="filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6))"
+        alt="おうちベーカリーstrawberrytime ロゴ"
+      />
+    
+
+    <!-- ===== MAIN SECTIONS ===== -->
+    <section class="v fcc my120 gap60 p24">
+      <!-- ① お店紹介 -->
+      <div class="v fcc gap24 miw1100">
+        <h2 class="f40 fw700 tc section-title">お店のこと</h2>
+
+        <!-- 説明＋写真 -->
+        <div class="fcc" style="gap: 24px; flex-wrap: wrap">
+          <img src="img/top1.webp" alt="焼きたてパン" style="width: min(480px, 100%); border-radius: 16px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); object-fit: cover; aspect-ratio: 4/3" />
+          <div style="max-width: 560px; line-height: 1.9; font-size: 18px">
+            <p><b>山口県山口市のパン・ケーキ屋さんです</b></p>
+
+            <p><b>オーナーが心を込めて手作り。</b> おいしいものが大好きで、レシピから考えたパンを自信をもって焼いています。</p>
+            <p><b>営業は木・金・土。</b> ここだけの創作パンや、季節のいちごメニューも登場します。</p>
+            <p>食べてくれた人の「おいしい！」が一番のしあわせ。そんな気持ちで今日もオーブンに向かっています。</p>
+          </div>
+        </div>
+
+        <!-- オーナー紹介 -->
+        <div class="v fxc" style="gap: 24px; max-width: 800px; margin: 40px auto 0; text-align: center">
+          <img src="img/miwako.webp" alt="オーナー写真" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12)" />
+          <div style="line-height: 1.9; font-size: 18px">
+            <h3 class="f28 fw700">オーナー　みわこ（<span id="age"></span>）</h3>
+
+            <script>
+              (function () {
+                const birthDate = new Date(1965, 7, 18); // 月は0始まりなので「8月」は7
+                const today = new Date();
+
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const hasHadBirthday = today.getMonth() > birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+                if (!hasHadBirthday) age--;
+
+                document.getElementById("age").textContent = age;
+              })();
+            </script>
+            <p>好きなもの：いちご・おいしいものを食べること・まっすー・ぱんどろぼう</p>
+            <p>2010年に黒川にてお店をオープンし、<br />2020年で現在の維新公園に移転しました。</p>
+            <p>「おいしい！」の笑顔を見るのがなによりの喜びです。</p>
+          </div>
+        </div>
+      </div>
+      <div class="v fcc h50"></div>
+
+      <div class="v fcc gap24 miw1100">
+        <h2 class="f40 fw700 tc section-title">お知らせ</h2>
+        <div class="spv">
+          <a href="img/news1.webp" target="_blank" rel="noopener noreferrer">
+            <img src="img/news1.webp" class="w400" alt="おうちベーカリーstrawberrytime お知らせ1" style="cursor: pointer" />
+          </a>
+          <a href="img/news2.webp" target="_blank" rel="noopener noreferrer">
+            <img src="img/news2.webp" class="w400" alt="おうちベーカリーstrawberrytime お知らせ2" style="cursor: pointer" />
+          </a>
+        </div>
       </div>
 
-      <!-- ===== MAIN SECTIONS ===== -->
-      <section class="v fcc my120 gap60 p24">
-        <!-- ① お店紹介 -->
-        <div class="v fcc gap24 miw1100">
-          <h2 class="f40 fw700 tc section-title">お店のこと</h2>
-
-          <!-- 説明＋写真 -->
-          <div class="fcc" style="gap: 24px; flex-wrap: wrap">
-            <img src="img/top1.webp" alt="焼きたてパン" style="width: min(480px, 100%); border-radius: 16px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); object-fit: cover; aspect-ratio: 4/3" />
-            <div style="max-width: 560px; line-height: 1.9; font-size: 18px">
-              <p><b>山口県山口市のパン・ケーキ屋さんです</b></p>
-
-              <p><b>オーナーが心を込めて手作り。</b> おいしいものが大好きで、レシピから考えたパンを自信をもって焼いています。</p>
-              <p><b>営業は木・金・土。</b> ここだけの創作パンや、季節のいちごメニューも登場します。</p>
-              <p>食べてくれた人の「おいしい！」が一番のしあわせ。そんな気持ちで今日もオーブンに向かっています。</p>
-            </div>
-          </div>
-
-          <!-- オーナー紹介 -->
-          <div class="v fxc" style="gap: 24px; max-width: 800px; margin: 40px auto 0; text-align: center">
-            <img src="img/miwako.webp" alt="オーナー写真" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12)" />
-            <div style="line-height: 1.9; font-size: 18px">
-              <h3 class="f28 fw700">オーナー　みわこ（<span id="age"></span>）</h3>
-
-              <script>
-                (function () {
-                  const birthDate = new Date(1965, 7, 18); // 月は0始まりなので「8月」は7
-                  const today = new Date();
-
-                  let age = today.getFullYear() - birthDate.getFullYear();
-                  const hasHadBirthday = today.getMonth() > birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
-
-                  if (!hasHadBirthday) age--;
-
-                  document.getElementById("age").textContent = age;
-                })();
-              </script>
-              <p>好きなもの：いちご・おいしいものを食べること・まっすー・ぱんどろぼう</p>
-              <p>2010年に黒川にてお店をオープンし、<br />2020年で現在の維新公園に移転しました。</p>
-              <p>「おいしい！」の笑顔を見るのがなによりの喜びです。</p>
-            </div>
-          </div>
-        </div>
-        <div class="v fcc h50"></div>
-
-        <div class="v fcc gap24 miw1100">
-          <h2 class="f40 fw700 tc section-title">お知らせ</h2>
-          <div class="spv">
-            <a href="img/news1.webp" target="_blank" rel="noopener noreferrer">
-              <img src="img/news1.webp" class="w400" alt="おうちベーカリーstrawberrytime お知らせ1" style="cursor: pointer" />
-            </a>
-            <a href="img/news2.webp" target="_blank" rel="noopener noreferrer">
-              <img src="img/news2.webp" class="w400" alt="おうちベーカリーstrawberrytime お知らせ2" style="cursor: pointer" />
-            </a>
-          </div>
+      <div class="v fcc h50"></div>
+      <!-- ② 人気メニュー -->
+      <div class="v fxc section-gap" style="gap: 20px; max-width: 1100px; margin: 0 auto">
+        <h2 class="f40 fw700 tc section-title">人気メニュー</h2>
+        <p class="tc f30" style="margin: 0 0 8px; color: #666">※日によってラインナップが変わります。<br />最新情報はInstagramをご確認ください。</p>
+        <div class="fxc" style="margin: 8px 0 12px 0">
+          <a href="https://www.instagram.com/ouchi_bakery_strawberrytime/" target="_blank" rel="noopener noreferrer" class="fcc w242 h57 br27 nodeco bg#DB1966">
+            <img src="img/i-insta.webp" class="w50" alt="Instagram アイコン" />
+            <div class="f21 fw700 ml9 cFFF">Instagram</div>
+          </a>
         </div>
 
-        <div class="v fcc h50"></div>
-        <!-- ② 人気メニュー -->
-        <div class="v fxc section-gap" style="gap: 20px; max-width: 1100px; margin: 0 auto">
-          <h2 class="f40 fw700 tc section-title">人気メニュー</h2>
-          <p class="tc f30" style="margin: 0 0 8px; color: #666">※日によってラインナップが変わります。<br />最新情報はInstagramをご確認ください。</p>
-          <div class="fxc" style="margin: 8px 0 12px 0">
-            <a href="https://www.instagram.com/ouchi_bakery_strawberrytime/" target="_blank" rel="noopener noreferrer" class="fcc w242 h57 br27 nodeco bg#DB1966">
-              <img src="img/i-insta.webp" class="w50" alt="Instagram アイコン" />
-              <div class="f21 fw700 ml9 cFFF">Instagram</div>
-            </a>
-          </div>
+        <div class="fcc" style="gap: 16px; flex-wrap: wrap; justify-content: center">
+          <!-- カード1 -->
+          <figure style="height: 400px; width: min(260px, 46vw); margin: 0; padding: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); background: #fff">
+            <img src="img/menu_shokupan.webp" alt="食パン" style="width: 100%; height: 190px; object-fit: cover" />
+            <figcaption style="padding: 12px 14px">
+              <b>食パン</b><br />
+              <span style="color: #555; font-size: 14px">
+                ふわふわ・もちもち食感で、耳までおいしい。<br />
+                毎日の朝食にもぴったりです。
+              </span>
+            </figcaption>
+          </figure>
 
-          <div class="fcc" style="gap: 16px; flex-wrap: wrap; justify-content: center">
-            <!-- カード1 -->
-            <figure style="height: 400px; width: min(260px, 46vw); margin: 0; padding: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); background: #fff">
-              <img src="img/menu_shokupan.webp" alt="食パン" style="width: 100%; height: 190px; object-fit: cover" />
-              <figcaption style="padding: 12px 14px">
-                <b>食パン</b><br />
-                <span style="color: #555; font-size: 14px">
-                  ふわふわ・もちもち食感で、耳までおいしい。<br />
-                  毎日の朝食にもぴったりです。
-                </span>
-              </figcaption>
-            </figure>
+          <!-- カード2 -->
+          <figure style="height: 400px; width: min(260px, 46vw); margin: 0; padding: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); background: #fff">
+            <img src="img/menu_chiffon.webp" alt="シフォンケーキ" style="width: 100%; height: 190px; object-fit: cover" />
+            <figcaption style="padding: 12px 14px">
+              <b>シフォンケーキ</b><br />
+              <span style="color: #555; font-size: 14px">
+                ふわっふわで、おいしい自慢のシフォン。<br />
+                プレーン・抹茶・栗・メープルなど、味は日替わり。<br />
+                当店に来たら一度は食べてほしい味です。</span
+              >
+            </figcaption>
+          </figure>
 
-            <!-- カード2 -->
-            <figure style="height: 400px; width: min(260px, 46vw); margin: 0; padding: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); background: #fff">
-              <img src="img/menu_chiffon.webp" alt="シフォンケーキ" style="width: 100%; height: 190px; object-fit: cover" />
-              <figcaption style="padding: 12px 14px">
-                <b>シフォンケーキ</b><br />
-                <span style="color: #555; font-size: 14px">
-                  ふわっふわで、おいしい自慢のシフォン。<br />
-                  プレーン・抹茶・栗・メープルなど、味は日替わり。<br />
-                  当店に来たら一度は食べてほしい味です。</span
-                >
-              </figcaption>
-            </figure>
-
-            <!-- カード3 -->
-            <figure style="height: 400px; width: min(260px, 46vw); margin: 0; padding: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); background: #fff">
-              <img src="img/menu_sand.webp" alt="サンドウィッチ" style="width: 100%; height: 190px; object-fit: cover" />
-              <figcaption style="padding: 12px 14px">
-                <b>サンドウィッチ</b><br />
-                <span style="color: #555; font-size: 14px">
-                  こだわりの手作りディップやラペを使った、具だくさんサンド。<br />
-                  パストラミビーフ・サーモン・エビなど、<br />
-                  その日のおいしい具材がたっぷり！</span
-                >
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="fxc my20">
-            <a href="menu.html" class="btn btn--pink">メニューをもっと見る</a>
-          </div>
+          <!-- カード3 -->
+          <figure style="height: 400px; width: min(260px, 46vw); margin: 0; padding: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); background: #fff">
+            <img src="img/menu_sand.webp" alt="サンドウィッチ" style="width: 100%; height: 190px; object-fit: cover" />
+            <figcaption style="padding: 12px 14px">
+              <b>サンドウィッチ</b><br />
+              <span style="color: #555; font-size: 14px">
+                こだわりの手作りディップやラペを使った、具だくさんサンド。<br />
+                パストラミビーフ・サーモン・エビなど、<br />
+                その日のおいしい具材がたっぷり！</span
+              >
+            </figcaption>
+          </figure>
         </div>
 
-        <div class="v fcc h50"></div>
+        <div class="fxc my20">
+          <a href="menu.html" class="btn btn--pink">メニューをもっと見る</a>
+        </div>
+      </div>
 
-        <!-- ④ パン教室 -->
-        <div class="v fcc" style="gap: 16px; max-width: 1100px; margin: 0 auto">
-          <h2 class="f40 fw700 tc section-title">パン教室</h2>
-          <div class="fcc" style="gap: 24px; flex-wrap: wrap; align-items: center">
-            <img src="img/class.webp" alt="パン教室の様子" style="width: min(480px, 100%); border-radius: 16px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); object-fit: cover; aspect-ratio: 4/3" />
-            <div style="max-width: 560px; line-height: 1.9; font-size: 18px">
-              <p><b>平日は月曜・火曜にパン教室を開催。</b> 初心者から上級者まで幅広く通ってます。</p>
-              <p>冬は<strong>クリスマスのケーキ教室</strong>、月一回の子供パン教室、長期休みは親子パン教室などの開催も！</p>
-              <div class="fcc" style="gap: 10px; flex-wrap: wrap; margin-top: 8px">
-                <a href="lesson.html" class="btn btn--pink">パン教室をくわしく</a>
-              </div>
+      <div class="v fcc h50"></div>
+
+      <!-- ④ パン教室 -->
+      <div class="v fcc" style="gap: 16px; max-width: 1100px; margin: 0 auto">
+        <h2 class="f40 fw700 tc section-title">パン教室</h2>
+        <div class="fcc" style="gap: 24px; flex-wrap: wrap; align-items: center">
+          <img src="img/class.webp" alt="パン教室の様子" style="width: min(480px, 100%); border-radius: 16px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); object-fit: cover; aspect-ratio: 4/3" />
+          <div style="max-width: 560px; line-height: 1.9; font-size: 18px">
+            <p><b>平日は月曜・火曜にパン教室を開催。</b> 初心者から上級者まで幅広く通ってます。</p>
+            <p>冬は<strong>クリスマスのケーキ教室</strong>、月一回の子供パン教室、長期休みは親子パン教室などの開催も！</p>
+            <div class="fcc" style="gap: 10px; flex-wrap: wrap; margin-top: 8px">
+              <a href="lesson.html" class="btn btn--pink">パン教室をくわしく</a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- ===== /MAIN SECTIONS ===== -->
-    </div>
+      </div>
+      </div>
+    </section>
+    <!-- ===== /MAIN SECTIONS ===== -->
 
     <!-- SP版コンテンツ -->
     <div class="sp v fcc" style="padding-top: 98px">
